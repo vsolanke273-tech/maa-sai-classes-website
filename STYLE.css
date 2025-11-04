@@ -1,0 +1,300 @@
+/* ================================
+   Maa Sai Classes – Official Style
+   Created for Rohit
+   ================================ */
+
+/* ====== Reset & Base ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fffdf6;
+  color: #222;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ====== Header & Navbar ====== */
+header {
+  background-color: #ffcc00;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* nav list */
+#nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  align-items: center;
+}
+
+#nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: 0.3s ease;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+#nav-links li a:hover,
+#nav-links li a.active {
+  color: #0056b3;
+  background: rgba(0,0,0,0.03);
+}
+
+/* ====== Mobile Navbar Toggle ====== */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: #000;
+  cursor: pointer;
+}
+
+/* ====== Hero Section ====== */
+.hero {
+  background: linear-gradient(135deg, #fff8c6, #ffeb80);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #444;
+  max-width: 750px;
+  margin: 0 auto 25px;
+}
+
+.hero button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #333;
+}
+
+/* ====== Section Design ====== */
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #ffcc00;
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+
+/* ====== Paragraphs ====== */
+section p {
+  text-align: center;
+  color: #444;
+  font-size: 17px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ====== Cards (Courses/Gallery) ====== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 25px 15px;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* ====== Contact Form ====== */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input, form textarea {
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  resize: none;
+}
+
+form button {
+  background: #ffcc00;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #ffd633;
+}
+
+/* ====== Footer ====== */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+/* ====== WhatsApp Floating Button ====== */
+.whatsapp-float {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 55px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+  background-color: #20ba5a;
+}
+
+/* ====== Small tweaks for wide screens (optional) ====== */
+@media (min-width: 1200px) {
+  .navbar {
+    padding: 14px 30px;
+  }
+  .hero {
+    padding: 130px 20px;
+  }
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #ffcc00;
+    padding: 10px 0;
+  }
+
+  #nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero {
+    padding: 70px 15px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+}
+
+/* ====== Extra: make sure long nav doesn't wrap on wider small screens ====== */
+@media (max-width: 480px) {
+  #nav-links li a {
+    padding: 8px 10px;
+    font-size: 15px;
+  }
+}
